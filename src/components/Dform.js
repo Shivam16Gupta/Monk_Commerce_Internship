@@ -1,13 +1,10 @@
 import React, { useState,useRef } from "react";
 import {
   TextField,
-  Button,
-  Box,
-  InputAdornment,
-  Snackbar,
+  Button
+
 } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
-import MenuItem from "@material-ui/core/MenuItem";
+ import MenuItem from "@material-ui/core/MenuItem";
 import "../assets/css/form.css";
 import { stateCity } from "./State_City";
 import Autocomplete from "@material-ui/lab/Autocomplete";
@@ -18,7 +15,7 @@ const Dform = () => {
   const [state, setState] = useState("");
   const [errors, setErrors] = useState("");
   const [selectCity, setSelectCity] = useState(true);
-  const formRef = useRef();
+   const formRef = useRef();
   const handleReset = () => {
     formRef.current.reset();
 
@@ -33,6 +30,7 @@ const Dform = () => {
     landmark: "",
     pincode: "",
   });
+
 
 
   const handleStateChange = (e) => {
@@ -62,21 +60,10 @@ const Dform = () => {
 
   const onSubmit = (e) => {
 
+
     setErrors(validate(data));
   }
-  const onReset = () =>{
-    setData({
-      name: "",
-      number: "",
-      state: "",
-      city: "",
-      line1: "",
-      line2: "",
-      landmark: "",
-      pincode: "",
-    })
-  }
-
+ 
 
   return (
     <div className="box">
@@ -179,10 +166,15 @@ const Dform = () => {
             <Button variant="contained" color="primary" onClick={onSubmit}>
               Submit
             </Button>
+
+
           </div>
         </form>
       </div>
     </div>
+
+
+
   );
 };
 export default Dform;

@@ -1,49 +1,54 @@
 import React, { useState,useRef } from "react";
+import {
+  Dialog
+} from "@material-ui/core";
 
-const Table=()=>{
+const Table=(props)=>{
+    console.log(props.data)
   return(
 
     <div>
+
     <table>
     <tr>
     <td>Name</td>
-    <td>{data.name}</td>
+    <td>{props.data.name}</td>
     </tr>
     <tr>
     <td>Conatct Number</td>
-    <td>{data.number}</td>
+    <td>{props.data.number}</td>
     </tr>
     <tr>
     <td>State</td>
-    <td>{data.state}</td>
+    <td>{props.data.state}</td>
     </tr>
     <tr>
     <td>City</td>
-    <td>{data.city}</td>
+    <td>{props.data.city}</td>
     </tr>
     <tr>
     <td>Line 1 Address</td>
-    <td>{data.line1}</td>
+    <td>{props.data.line1}</td>
     </tr>
     <tr>
     <td>Line 2 Address</td>
-    <td>{data.line2}</td>
+    <td>{props.data.line2}</td>
     </tr>
     <tr>
     <td>Landmark</td>
-    <td>{data.landmark}</td>
+    <td>{props.data.landmark}</td>
     </tr>
     <tr>
     <td>Pincode</td>
-    <td>{data.pincode}</td>
+    <td>{props.data.pincode}</td>
     </tr>
     <tr>
     <td>Name</td>
-    <td>{data.name}</td>
+    <td>{props.data.name}</td>
     </tr>
     <tr>
     <td>Name</td>
-    <td>{data.name}</td>
+    <td>{props.data.name}</td>
     </tr>
     </table>
     </div>
@@ -53,4 +58,4 @@ const Table=()=>{
   );
 }
 
-default export Table;
+ export default Table;
