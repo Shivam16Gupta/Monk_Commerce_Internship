@@ -7,19 +7,25 @@
   padding: 5%;
  overflow: auto;
     display: flex;
-    /* display: -webkit-flex; */
+    display: -webkit-flex;
 
-    /* align-items: center; */
-    /* justify-content: center; */
+    align-items: center;
+    justify-content: center;
 }
 .MuiInputBase-root{
 
-  margin-bottom: 10px;
+  margin-top: 10px;
   width: 100%;
 }
 .MuiFormControl-root{
   width:40vw;
 }
+.MuiButton-containedPrimary{
+  background-color: hsla(33, 100%, 53%, 1) !important;
+}
+/* .MuiOutlinedInput-input:focus{
+  border:hsla(33, 100%, 53%, 1) !important;
+} */
 form{
   margin-top: 40px;
   padding: 10px;
@@ -36,12 +42,19 @@ form{
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
+  margin-top: 10px;
 }
 button{
   /* width: 200px; */
 
 }
-
+.errmsg{
+  margin:0;
+  font-size:13px;
+  color: red;
+  font-weight: bold;
+  
+}
 
 .box-primary {
     display: flex;
@@ -78,5 +91,14 @@ button{
     }
     .form{
       width: 100%;
+    }
+    .MuiFormControl-root{
+      width:100%;
+    }
+    .MuiButton-root{
+      margin-bottom: 10px !important;
+    }
+    .autofield{
+      width: 72vw !important;
     }
 }
